@@ -163,8 +163,8 @@ button:active {
 
 .homePageHeader {
     margin-left: 30px;
-        /*height:100vh;*/
-        width:50vw;
+    /*height:100vh;*/
+    width:50vw;
 }
 
 
@@ -576,7 +576,7 @@ button:active {
 
 
 .replyHeaderHolder {
-text-align: left;
+    text-align: left;
     min-width: 300px;
     float: left;
 }
@@ -606,7 +606,7 @@ text-align: left;
 
 .inlineReply {
     margin-left: 50px;
-text-align: left;
+    text-align: left;
     max-height: 18px;
 
     color: darkgreen;
@@ -942,39 +942,39 @@ pre {
     min-height: fit-content;
 }
 
-    .postHolder {
+.postHolder {
 
-        margin-left: 20px;
-        max-width: 80%;
-    }
+    margin-left: 20px;
+    max-width: 80%;
+}
 
-    .enemyPostHolder {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 80%;
-    }
+.enemyPostHolder {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
 
-    .enemyPostBody {
-        max-width: 80%;
-    }
+.enemyPostBody {
+    max-width: 80%;
+}
 
-    .enemyPostText {
-        max-width: 80%;
-    }
+.enemyPostText {
+    max-width: 80%;
+}
 
-    .originalPoster {
-        max-width: 85%;
-    }
+.originalPoster {
+    max-width: 85%;
+}
 
-    .originalPosterText {
-        max-width: 85%;
-    }
+.originalPosterText {
+    max-width: 85%;
+}
 
-    .enemyPostText {
-        max-width: 80%;
-    }
+.enemyPostText {
+    max-width: 80%;
+}
 
-    .floatingReplies {
-        max-width: 70%;
-    }
+.floatingReplies {
+    max-width: 70%;
+}
