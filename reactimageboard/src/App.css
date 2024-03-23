@@ -1,0 +1,980 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    background-color: lightgray;
+}
+
+
+
+
+@-webkit-keyframes bounceInBefore-44 {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1) translate(-50%, -50%) rotate(45deg);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0.89) translate(-50%, -50%) rotate(45deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+@keyframes bounceInBefore-44 {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1) translate(-50%, -50%) rotate(45deg);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0.89) translate(-50%, -50%) rotate(45deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%) rotate(45deg);
+    }
+}
+@-webkit-keyframes bounceInAfter-44 {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1) translate(-50%, -50%) rotate(-45deg);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0.89) translate(-50%, -50%) rotate(-45deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+    }
+}
+@keyframes bounceInAfter-44 {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1) translate(-50%, -50%) rotate(-45deg);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0.89) translate(-50%, -50%) rotate(-45deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+    }
+}
+@-webkit-keyframes bounceInBeforeDont-44 {
+    0% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%) rotate(45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+    }
+}
+@keyframes bounceInBeforeDont-44 {
+    0% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%) rotate(45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3) translate(-50%, -50%) rotate(45deg);
+    }
+}
+@-webkit-keyframes bounceInAfterDont-44 {
+    0% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+    }
+}
+@keyframes bounceInAfterDont-44 {
+    0% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.3) translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: darkslategrey;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+}
+
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 5px 50px #a29bfe;
+}
+
+
+.error {
+    border-color: #ea2027 !important;
+}
+
+.marginParagraphAbout {
+    float: left;
+    padding: 20px;
+
+    background: url("../public/bendotplace.png") no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.homePageName {
+    float: left;
+    padding: 45px;
+}
+
+.homePageHeader {
+    margin-left: 30px;
+        /*height:100vh;*/
+        width:50vw;
+}
+
+
+
+.mainPostPage {
+    background-color: lightgray;
+    text-align: center;
+    margin: 0;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+
+}
+
+
+.nav {
+    overflow: hidden;
+    height: 80px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.circularLogo{
+    transition: all 2s;
+    box-sizing: border-box;
+    max-width: 100%;
+    animation-name: spinConstant;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.monPageCoachHeader {
+    color: lightgreen;
+    display: flex;
+}
+.smallButton {
+    padding-left: 50px;
+    line-height: 0px;
+    height: 20px;
+    width: 10px;
+}
+@keyframes spinConstant {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.monStats {
+    padding-top: 10px;
+}
+.nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .35rem;
+}
+
+.loginButton {
+    padding: 5px;
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+}
+
+nav li.active {
+    background-color: white;
+    padding: 10px;
+    border-radius: 70%;
+    box-shadow: 0 0 9px 4px white;
+    animation: glow 1.5s linear infinite;
+    /*width: 100%;*/
+}
+
+.nav li:hover {
+    background-color: white;
+    padding: 10px;
+
+    border-radius: 70%;
+    box-shadow: 0 0 9px 4px white;
+    animation: glow 1.5s linear infinite;
+    /*width: 100%;*/
+}
+
+.submissionForm {
+    margin: auto;
+    display: block;
+}
+
+textarea {
+    border-color: black;
+    border-width: 5px;
+    background-color: lightgrey;
+}
+
+input[type=text] {
+    border-color: black;
+    border-width: 5px;
+    background-color: lightgrey;
+}
+
+input[type=text]:focus {
+    border-color: lightblue;
+    outline: 2px solid lightskyblue; /* oranges! yey */
+}
+
+.mainTextSubmit {
+    margin: auto;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+
+}
+
+.navIcon {
+    margin: -15px;
+    height: 70px;
+
+}
+
+a {
+    color: black
+}
+
+a:link {
+    text-decoration: none
+}
+
+.theEntirePost {
+    float: left;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+.postHolder {
+    max-width: inherit;
+    float: left;
+
+    border-style: groove;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    width: fit-content;
+    min-width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-height: 400px;
+    min-height: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 20px;
+
+
+}
+
+.postContent {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.postBody {
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.postHeader {
+    display: flex;
+    background-color: darkgrey;
+    margin: auto;
+}
+
+.postFooter {
+
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.replies {
+
+    margin-left: auto;
+}
+
+.replyNow {
+    margin-left: 50px;
+}
+
+.trashHolder {
+
+    margin-left: auto;
+
+}
+
+.postHolder:hover {
+    background-color: lightslategrey;
+    color: white;
+    box-shadow: 10px 5px 5px darkslategrey;
+}
+
+.postTopic {
+
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 16px;
+}
+
+.postText {
+    max-width: 80%;
+    overflow: hidden;
+    padding: 5px;
+
+    text-align: left;
+    float: left;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*display: block;*/
+    /*flex-wrap: wrap;*/
+}
+
+.floatingCards {
+    display: block;}
+
+.toolContainer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    display: flex;
+}
+
+.searchBar {
+    margin-bottom: 10px;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.postButtonHolder {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+.enemyPostHolder {
+    box-shadow: 10px 5px 5px darkslategrey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: fit-content;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 150px;
+    /*width: fit-content;*/
+    border-style: ridge;
+    border-width: 2px;
+    margin-left: 20px;
+    padding: 10px;
+    /*max-height: fit-content;*/
+    background-color: lightblue;
+}
+
+.enemyPostBody {
+    max-width: 80%;
+    overflow: hidden;
+    padding: 5px;
+    text-align: left;
+    float: left;
+}
+
+.enemyPostHeader {
+    width: fit-content;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+}
+
+.enemyPostName {
+    margin: auto
+}
+
+.enemyPostNumber {
+    font-size: 16px;
+}
+
+.enemyPostText {
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+}
+
+.originalPoster {
+    padding-left: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px darkslategrey;
+    border-style: solid;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: grey;
+    min-height: 185px;
+    min-width: 100px;
+    white-space: -o-pre-wrap;
+    max-width: 400px;
+    max-height: 2000px;
+}
+
+.originalPosterTopic {
+    color: lightgreen;
+    background-color: #333;
+    margin: auto;
+}
+
+.originalPosterBody {
+    max-height: 2000px;
+    max-width: inherit;
+    width: inherit;
+}
+
+.originalPosterText {
+    max-width: 80%;
+    overflow: hidden;
+    padding: 5px;
+    text-align: left;
+    float: left;
+}
+
+.originalPosterHeader {
+    display: flex;
+    font-size: 14px;
+}
+
+.originalPosterName {
+    margin-left: 20px;
+}
+
+.originalPosterNumber {
+    font-size: 20px;
+}
+
+.postText {
+    white-space: pre-line;
+}
+
+.submissionFormReply {
+    padding: 20px;
+    float: left;
+    display: flex;
+    justify-content: left;
+}
+
+.replies {
+    margin: auto;
+    display: flex;
+    font-size: 12px;
+}
+
+
+button {
+    background-color: darkslategrey; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3e8e41
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+}
+
+
+.replyHeaderHolder {
+text-align: left;
+    min-width: 300px;
+    float: left;
+}
+
+.plusGuy {
+
+    display: flex;
+    vertical-align: auto;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+
+.replyMinusSign {
+    padding-right: 35px;
+}
+
+.replyTrashSign {
+    margin-left: auto;
+
+    float: right;
+    width: fit-content;
+}
+
+
+.inlineReply {
+    margin-left: 50px;
+text-align: left;
+    max-height: 18px;
+
+    color: darkgreen;
+}
+
+.inlineReply:after {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    z-index: 10;
+    content: attr(textFloat);
+
+}
+
+.inlineReply:hover:after {
+    border-style: solid;
+    border-color: black;
+
+    display: inline-block;
+}
+
+.inlineReply2 {
+    color: darkgreen;
+
+}
+
+.inlineReply2:after {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    z-index: 10;
+    content: attr(textFloat);
+}
+
+.inlineReply2:hover:after {
+    border-style: solid;
+    border-color: black;
+    display: contents;
+}
+
+.inlineReply3 {
+    font-size: 20px;
+    color: darkgreen;
+}
+
+.inlineReply3:after {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    z-index: 10;
+    content: attr(textFloat);
+}
+
+
+.inlineReply3:hover:after {
+    border-style: solid;
+    border-color: black;
+
+    display: contents;
+}
+
+.timeStampOP {
+    margin-left: 30px;
+}
+
+.enemyTimeStamp {
+    margin-left: 30px;
+}
+
+.backwardButton {
+    width: 10%;
+}
+
+.backwardButton {
+    color: darkslategrey;
+}
+
+.backwardButton:hover {
+    color: lightgreen;
+}
+
+.forwardButton {
+    width: 10%;
+}
+
+pre {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.greenText {
+    color: green;
+}
+
+#reply0 {
+    color: lightblue;
+    text-decoration: white;
+    background-color: lightgreen;
+}
+
+#reply0.postText {
+    color: white;
+}
+
+.hideSearch {
+    float: left;
+    width: 30%;
+}
+
+.leaderboard {
+    margin-bottom: 90px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    height: 30px;
+    width: 100%;
+
+}
+
+.postPage {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    text-align: center;
+    margin: 0;
+}
+
+.footerPostPage {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 3%;
+
+}
+
+.searchIcon {
+    margin: 20px
+}
+
+.stackIcon {
+    margin: 20px
+}
+.paragraphRight {
+    display: none;
+}
+
+
+
+.floatingReplies {
+    margin-top: -10px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+    text-align: left;
+    max-width: 400px;
+}
+
+.floatingReply {
+    border-width: 1px;
+    border-style: solid;
+    float: left;
+    padding: 5px;
+    max-width: 80%;
+    margin: 2px 2px 2px 25px;
+    background-color: lightgreen;
+    max-height: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.postButton {
+    background-color: green;
+}
+
+.postImage {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.originalPostImage {
+    float: left;
+    max-height: 100px;
+    max-width: 100px;
+
+
+}
+
+.enemyPostImage {
+    padding: 5px;
+    float: left;
+    position: relative;
+    overflow: auto;
+    max-height: 100px;
+    max-width: 100px;
+
+
+}
+
+.xIconHolder:hover {
+
+    color: red;
+    transform: scale(1.4);
+}
+
+.plusIconHolder:hover {
+    color: green;
+    /*size: 30px;*/
+    transform: scale(1.4);
+}
+
+.minusIconHolder:hover {
+    color: cornflowerblue;
+    transform: scale(1.4);
+    animation: bounce 2.5s infinite;
+    -webkit-animation: bounce 2.5s infinite;
+    -moz-animation: bounce 2.5s infinite;
+    -o-animation: bounce 2.5s infinite;
+}
+
+@keyframes slide-right-left {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right-left {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left-right {
+    from {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes minimize {
+    from {
+        transform: scale(1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.minimizeElement {
+    animation: minimize .3s linear;
+}
+
+.slideUp {
+    animation: slide-down-up .4s linear;
+}
+
+.slideLeft {
+    animation: slide-right-left .4s linear;
+}
+
+.posts {
+    animation: slide-right-left .4s linear;
+}
+
+.enemyPosters {
+    animation: slide-right-left .6s linear;
+}
+.originalPoster {
+    animation: slide-right-left .3s linear;
+}
+
+.nameTextSubmit {
+    animation: slide-right-left .3s linear;
+
+}
+
+.mainTextSubmit {
+    animation: slide-right-left .6s linear;
+}
+
+.topicTextSubmit {
+    animation: slide-right-left .3s linear;
+}
+
+.logoBen {
+    height: 100px;
+    margin: 5px;
+}
+
+.theEntirePost {
+    padding-bottom: 10px;
+    max-width: 80%;
+    min-height: fit-content;
+}
+
+    .postHolder {
+
+        margin-left: 20px;
+        max-width: 80%;
+    }
+
+    .enemyPostHolder {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 80%;
+    }
+
+    .enemyPostBody {
+        max-width: 80%;
+    }
+
+    .enemyPostText {
+        max-width: 80%;
+    }
+
+    .originalPoster {
+        max-width: 85%;
+    }
+
+    .originalPosterText {
+        max-width: 85%;
+    }
+
+    .enemyPostText {
+        max-width: 80%;
+    }
+
+    .floatingReplies {
+        max-width: 70%;
+    }
