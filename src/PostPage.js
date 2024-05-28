@@ -358,10 +358,16 @@ export default function PostPage() {
             <div className="submissionFormReply">
 
                 <div className="submissionForm2">
-                    <label>Name</label><input onChange={changeInputNameValue} type="text" className="nameTextSubmit"/>
+                    <div className="floating" style={{float: "left"}}>
+                        <input id="inputId" className="floating__input" name="input name"
+                               onChange={changeInputNameValue}
+                               placeholder="Placeholder"/>
+                        <label htmlFor="inputId" className="floating__label" data-content="Name">
+                        </label>
+                    </div>
 
                     <br/>
-                    <textarea onChange={changeInputPostBody} id="mainTextSubmit" className="mainTextSubmit"/>
+                    <textarea onChange={changeInputPostBody} id="mainTextSubmit" className="mainTextSubmit" placeholder="Your Post Goes Here!"/>
                     <br/>
                     <button onClick={submitReply}>REPLY</button>
                     <span className="fileUploadHolder">

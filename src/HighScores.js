@@ -283,11 +283,20 @@ export default function HighScores({contentPage}) {
                 <div className="postButtonHolder" id="postButtonHolder">
                     {
                         showPostForm ? <div className="submissionForm" id="submissionForm">
-                            <label>Name</label><input onChange={changeInputNameValue} placeholder="Anonymous"
-                                                      type="text"
-                                                      className="nameTextSubmit"/>
-                            <label>Topic</label><input placeholder="Topic" type="text" onChange={changeInputTopicValue}
-                                                       className="topicTextSubmit"/>
+                            <div className="floating" style={{float: "left"}}>
+                                <input id="inputId" className="floating__input" name="input name"
+                                       onChange={changeInputNameValue}
+                                       placeholder="Placeholder"/>
+                                <label htmlFor="inputId" className="floating__label" data-content="Name">
+                                </label>
+                            </div>
+                            <div className="floating" style={{float: "left"}}>
+                                <input id="inputId" className="floating__input" name="input name"
+                                       onChange={changeInputTopicValue}
+                                       placeholder="Placeholder"/>
+                                <label htmlFor="inputId" className="floating__label" data-content="Topic">
+                                </label>
+                            </div>
                             <button onClick={hidePost}>Hide</button>
                             <br/>
                             <textarea placeholder="Post (max characters: 3000)" onChange={changeInputPostBody}
